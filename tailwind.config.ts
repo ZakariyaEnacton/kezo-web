@@ -13,7 +13,8 @@ const config: Config = {
         'black': '#1A1B25',
         'green': '#008522',
         'white': "#FFFFFF",
-        'top': '#ECEFF3'
+        'top': '#ECEFF3',
+        'secondary': '#818898'
       },
       boxShadow: {
         'header': '0px 6px 40px 0px rgba(182, 182, 182, 0.12);',
@@ -26,7 +27,8 @@ const config: Config = {
         center: true
       },
       letterSpacing: {
-        tightest: '-0.44px'
+        tightest: '-0.44px',
+        tighter: '-0.24px'
       },
       fontSize: {
         '4xl': '44px'

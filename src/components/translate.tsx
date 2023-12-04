@@ -1,6 +1,13 @@
 const translate: any = {
   footer: "Copyright KEZO - 2023",
   add: "Add City",
+  share: "Share Link",
+  nofeed: "No Feedback Available",
+  feed: "Feedback Available to Review",
+  view: "View More",
+  papercollection: "Paper collection should be on Tuesday",
+  feedback: "Feedbacks",
+  lastshared: "Last Shared",
 };
 
 const t = (phrase: string) => {
