@@ -17,6 +17,9 @@ const config: Config = {
       colors: {
         'blackText': '#1A1B25'
       },
+      boxShadow: {
+        'header': '0px 6px 40px 0px rgba(182, 182, 182, 0.12);'
+      }
     },
   },
   plugins: [],
