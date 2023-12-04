@@ -7,7 +7,15 @@ interface NavitemProps {
 }
 
 const Navitem: React.FC<NavitemProps> = ({ name, active }) => {
-  return <div className={active ? "font-bold" : ""}>{name}</div>;
+  return (
+    <div
+      className={
+        active ? "font-bold text-sm text-black" : "text-sm text-gray-400"
+      }
+    >
+      {name}
+    </div>
+  );
 };
 
 export default Navitem;
