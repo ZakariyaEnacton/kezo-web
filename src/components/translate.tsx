@@ -5,9 +5,9 @@ const translate: any = {
   nofeed: "No Feedback Available",
   feed: "Feedback Available to Review",
   view: "View More",
-  papercollection: "Paper collection should be on Tuesday",
+  paper_collection: "Paper collection should be on Tuesday",
   feedback: "Feedbacks",
-  lastshared: "Last Shared",
+  last_shared: "Last Shared",
 };
 
 const t = (phrase: string) => {

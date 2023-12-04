@@ -13,12 +13,13 @@ const config: Config = {
         'black': '#1A1B25',
         'green': '#008522',
         'white': "#FFFFFF",
-        'top': '#ECEFF3',
+        'top': '##ECEFF3',
         'secondary': '#818898'
       },
       boxShadow: {
-        'header': '0px 6px 40px 0px rgba(182, 182, 182, 0.12);',
-        'button': '0px 0px 0px 1px #126F2A, 0px 1px 4px 0px rgba(33, 56, 52, 0.50);'
+        'header': '0px 25px 60px 0px rgba(142, 142, 142, 0.12);',
+        'button': '0px 0px 0px 1px #126F2A, 0px 1px 4px 0px rgba(33, 56, 52, 0.50);',
+        'share': ' 0px 0px 0px 1px rgba(18, 55, 105, 0.08), 0px 1px 2px 0px rgba(164, 172, 185, 0.24);'
       },
       container: {
         screens: {
