@@ -6,9 +6,9 @@ const Navbar = () => {
   return (
     <div className="flex pt-2 pr-2 pl-5 pb-2 gap-1 items-center rounded-full z-10 bg-white ">
       <div className="flex gap-9 justify-center items-center mr-8">
-        <Navitem name="Status" active={true} />
-        <Navitem name="Calendar" active={false} />
-        <Navitem name="Manage Cities" active={false} />
+        <Navitem href="/" name="Status" active={true} />
+        <Navitem href="/calendar" name="Calendar" active={false} />
+        <Navitem href="/manage-cities" name="Manage Cities" active={false} />
       </div>
       <div className="items-center flex gap-1">
         <span>

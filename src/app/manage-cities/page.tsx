@@ -1,5 +1,11 @@
+import Contents from "@/components/Content";
+
 const Managecities = () => {
-  return <div>Managecities</div>;
+  return (
+    <div className="container">
+      <Contents />
+    </div>
+  );
 };
 
 export default Managecities;

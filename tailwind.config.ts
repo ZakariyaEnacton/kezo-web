@@ -11,15 +11,31 @@ const config: Config = {
       colors: {
         'primary': '#F8FAFB',
         'black': '#1A1B25',
+        'green': '#008522',
+        'white': "#FFFFFF",
+        'top': '#ECEFF3'
       },
       boxShadow: {
-        'header': '0px 6px 40px 0px rgba(182, 182, 182, 0.12);'
+        'header': '0px 6px 40px 0px rgba(182, 182, 182, 0.12);',
+        'button': '0px 0px 0px 1px #126F2A, 0px 1px 4px 0px rgba(33, 56, 52, 0.50);'
       },
       container: {
         screens: {
           'DEFAULT': '1320px'
         },
         center: true
+      },
+      letterSpacing: {
+        tightest: '-0.44px'
+      },
+      fontSize: {
+        '4xl': '44px'
+      },
+      fontWeight: {
+        'medium': '250'
+      },
+      borderWidth: {
+        DEFAULT: '1px'
       }
     },
   },
