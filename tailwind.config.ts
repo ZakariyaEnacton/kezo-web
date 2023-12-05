@@ -16,7 +16,10 @@ const config: Config = {
         'third': '#ECEFF3',
         'secondary': '#818898',
         'tert': '#DFE1E7',
-        'feed': "#666D80"
+        'feed': "#666D80",
+        'icon-bg': '#DDF3EF',
+        "admin": "#36394A",
+        "exit": "#DF1C41"
       },
       boxShadow: {
         'header': '0px 25px 60px 0px rgba(142, 142, 142, 0.12);',
