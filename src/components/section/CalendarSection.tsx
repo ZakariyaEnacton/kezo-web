@@ -1,10 +1,10 @@
 import CalCard from "../cards/CalCard";
-import CalTable from "../CalTable";
+import CalContent from "../table/CalContent";
 
 const CalendarSection = () => {
   return (
-    <div className="container flex items-start gap-8">
-      <CalTable />
+    <div className="container flex items-start gap-8 mb-4">
+      <CalContent />
       <CalCard />
     </div>
   );

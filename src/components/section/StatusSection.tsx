@@ -16,7 +16,7 @@ const StatusSection: React.FC = () => {
   ];
 
   return (
-    <div className="flex mt-4 container p-3 flex-col items-center gap-2 rounded-2xl bg-white shadow-header ">
+    <div className="flex container p-3 flex-col items-center gap-2 rounded-2xl bg-white shadow-header ">
       {cities.map((city, index) => (
         <CityCard city={city} index={index} />
       ))}

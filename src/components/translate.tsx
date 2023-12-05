@@ -14,6 +14,8 @@ const translate: any = {
   admin: "Admin name",
   email: "sampleemail@gmail.com",
   version: "Versioning",
+  paper: "Paper",
+  waste: "Waste",
 };
 
 const t = (phrase: string) => {

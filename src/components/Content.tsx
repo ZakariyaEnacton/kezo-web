@@ -9,7 +9,7 @@ const Contents = () => {
   const pathname = usePathname();
 
   const getYourSection: any = () => {
-    if (pathname === "/") {
+    if (pathname === "/status") {
       return <StatusSection />;
     } else if (pathname === "/calendar") {
       return <CalendarSection />;

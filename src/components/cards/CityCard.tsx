@@ -4,7 +4,7 @@ import {
   ChevronDownIcon,
 } from "@heroicons/react/24/outline";
 import t from "../translate";
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Transition } from "@headlessui/react";
 import { ExclamationCircleIcon } from "@heroicons/react/24/outline";
 
 const CityCard = ({ city, index }: any) => {
@@ -83,39 +83,49 @@ const CityCard = ({ city, index }: any) => {
                     </Disclosure.Button>
                   </div>
                 </div>
-                <Disclosure.Panel className="px-4 pb-2 pt-4">
-                  <div className="flex flex-col p-4 items-start gap-2 self-stretch rounded bg-third border border-tert">
-                    <span className="text-sm font-normal text-secondary ml-[2px]">
-                      {t("feedback")}
-                    </span>
-                    <div className="container">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <ExclamationCircleIcon className="h-5 w-5" />
-                          <span className="text-base font-normal">
-                            {t("example_one")}
-                          </span>
-                        </div>
-                        <span className="text-sm text-secondary">
-                          {t("date")}
-                        </span>
-                      </div>
+
+                <Transition
+                  enter="transition duration-100 ease-out"
+                  enterFrom="transform scale-95 opacity-0"
+                  enterTo="transform scale-100 opacity-100"
+                  leave="transition duration-75 ease-out"
+                  leaveFrom="transform scale-100 opacity-100"
+                  leaveTo="transform scale-95 opacity-0"
+                >
+                  <Disclosure.Panel className="px-4 pb-2 pt-4">
+                    <div className="flex flex-col p-4 items-start gap-2 self-stretch rounded bg-third border border-tert">
+                      <span className="text-sm font-normal text-secondary ml-[2px]">
+                        {t("feedback")}
+                      </span>
                       <div className="container">
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-3">
                             <ExclamationCircleIcon className="h-5 w-5" />
                             <span className="text-base font-normal">
-                              {t("example_two")}
+                              {t("example_one")}
                             </span>
                           </div>
                           <span className="text-sm text-secondary">
                             {t("date")}
                           </span>
                         </div>
+                        <div className="container">
+                          <div className="flex items-center justify-between">
+                            <div className="flex items-center gap-3">
+                              <ExclamationCircleIcon className="h-5 w-5" />
+                              <span className="text-base font-normal">
+                                {t("example_two")}
+                              </span>
+                            </div>
+                            <span className="text-sm text-secondary">
+                              {t("date")}
+                            </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Disclosure.Panel>
+                  </Disclosure.Panel>
+                </Transition>
               </div>
             )}
           </Disclosure>

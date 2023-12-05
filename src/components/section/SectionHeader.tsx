@@ -9,7 +9,7 @@ const SectionHeader = () => {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (pathname === "/") {
+    if (pathname === "/status") {
       setSectionTitle("Status");
     } else if (pathname === "/calendar") {
       setSectionTitle("Calendar");
