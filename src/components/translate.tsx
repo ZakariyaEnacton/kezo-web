@@ -16,6 +16,9 @@ const translate: any = {
   version: "Versioning",
   paper: "Paper",
   waste: "Waste",
+  edit_city: "Edit City",
+  delete: "Delete City",
+  add_email: "Add Email Address",
 };
 
 const t = (phrase: string) => {
