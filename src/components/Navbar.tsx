@@ -7,14 +7,35 @@ import {
 } from "@heroicons/react/24/outline";
 import { Menu, Transition } from "@headlessui/react";
 import t from "./translate";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [activeItem, setActiveItem] = useState("Status");
+
+  const handleNavItemClick = (itemName: string) => {
+    setActiveItem(itemName);
+  };
   return (
     <div className="flex pt-2 pr-2 pl-5 pb-2 gap-1 items-center rounded-full z-10 bg-white ">
       <div className="flex gap-9 justify-center items-center mr-8">
-        <Navitem href="/" name="Status" active={true} />
-        <Navitem href="/calendar" name="Calendar" active={false} />
-        <Navitem href="/manage-cities" name="Manage Cities" active={false} />
+        <Navitem
+          href="/"
+          name="Status"
+          active={activeItem === "Status"}
+          onClick={() => handleNavItemClick("Status")}
+        />
+        <Navitem
+          href="/calendar"
+          name="Calendar"
+          active={activeItem === "Calendar"}
+          onClick={() => handleNavItemClick("Calendar")}
+        />
+        <Navitem
+          href="/manage-cities"
+          name="Manage Cities"
+          active={activeItem === "Manage Cities"}
+          onClick={() => handleNavItemClick("Manage Cities")}
+        />
       </div>
       <div className="items-center flex gap-1">
         <Menu as="div" className="relative inline-block text-left ">

@@ -3,7 +3,7 @@ import {
   ShareIcon,
   ChevronDownIcon,
 } from "@heroicons/react/24/outline";
-import t from "./translate";
+import t from "../translate";
 import { Disclosure } from "@headlessui/react";
 import { ExclamationCircleIcon } from "@heroicons/react/24/outline";
 

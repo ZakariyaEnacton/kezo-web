@@ -13,6 +13,7 @@ const translate: any = {
   example_two: "Feedback Example no. 2",
   admin: "Admin name",
   email: "sampleemail@gmail.com",
+  version: "Versioning",
 };
 
 const t = (phrase: string) => {

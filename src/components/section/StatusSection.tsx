@@ -1,7 +1,7 @@
 import React from "react";
 import t from "../translate";
 import { ShareIcon } from "@heroicons/react/24/outline";
-import CityCard from "../CityCard";
+import CityCard from "../cards/CityCard";
 
 interface City {
   city: string;
