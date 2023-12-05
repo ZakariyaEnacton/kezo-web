@@ -19,6 +19,8 @@ const translate: any = {
   edit_city: "Edit City",
   delete: "Delete City",
   add_email: "Add Email Address",
+  not_shared_yet: "Not Shared Yet",
+  delete_and_upload: "Delete and Upload Again",
 };
 
 const t = (phrase: string) => {

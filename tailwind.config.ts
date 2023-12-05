@@ -33,7 +33,8 @@ const config: Config = {
         'share': ' 0px 0px 0px 1px rgba(18, 55, 105, 0.08), 0px 1px 2px 0px rgba(164, 172, 185, 0.24);',
         'cal': '0px 0px 0px 1px #ECECED, 0px 6px 40px 0px rgba(182, 182, 182, 0.12);',
         'menu': '0px 0px 0px 1px rgba(9, 25, 72, 0.30), 0px 1px 2px 0px rgba(18, 55, 105, 0.08)',
-        'search': '0px 0px 0px 3px #D8F2DF, 0px 2px 4px 0px rgba(9, 25, 72, 0.08);'
+        'search': '0px 0px 0px 3px #D8F2DF, 0px 2px 4px 0px rgba(9, 25, 72, 0.08);',
+        "danger": "0px 0px 0px 1px #B62D47, 0px 1px 4px 0px rgba(33, 56, 52, 0.50);"
       },
       container: {
         screens: {
