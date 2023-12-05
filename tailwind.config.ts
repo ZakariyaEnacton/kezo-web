@@ -13,8 +13,10 @@ const config: Config = {
         'black': '#1A1B25',
         'green': '#008522',
         'white': "#FFFFFF",
-        'top': '##ECEFF3',
-        'secondary': '#818898'
+        'third': '#ECEFF3',
+        'secondary': '#818898',
+        'tert': '#DFE1E7',
+        'feed': "#666D80"
       },
       boxShadow: {
         'header': '0px 25px 60px 0px rgba(142, 142, 142, 0.12);',
