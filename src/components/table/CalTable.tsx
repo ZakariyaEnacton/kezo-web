@@ -155,7 +155,7 @@ const CalTable: React.FC = () => {
                   : data.id === 11
                   ? "bg-gray-100"
                   : "bg-white"
-              } flex items-start bg-white border-b border-third `}
+              } flex items-start bg-white border-b border-third`}
             >
               <td className="flex w-[74px] h-[60px] px-6 py-4 items-center justify-center">
                 <span className="text-sm font-normal text-black">

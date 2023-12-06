@@ -7,16 +7,29 @@ import {
 } from "@heroicons/react/24/outline";
 import { Menu, Transition } from "@headlessui/react";
 import t from "./translate";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const [activeItem, setActiveItem] = useState("Status");
+  const [activeItem, setActiveItem] = useState("");
   const pathname = usePathname();
+
+  useEffect(() => {
+    if (pathname === "/status") {
+      setActiveItem("Status");
+    } else if (pathname === "/calendar") {
+      setActiveItem("Calendar");
+    } else if (pathname === "/manage-cities") {
+      setActiveItem("Manage Cities");
+    } else {
+      setActiveItem("");
+    }
+  }, [pathname]);
 
   const handleNavItemClick = (itemName: string) => {
     setActiveItem(itemName);
   };
+
   return (
     <div className="flex pt-2 pr-2 pl-5 pb-2 gap-1 items-center rounded-full z-10 bg-white ">
       <div className="flex gap-9 justify-center items-center mr-8">
