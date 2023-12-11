@@ -25,7 +25,8 @@ const config: Config = {
         'cals': '#272835',
         'select': '#F6F8FA',
         'paper': '#116B97',
-        'waste': '#966422'
+        'waste': '#966422',
+        'neutral': '#A4ACB9'
       },
       boxShadow: {
         'header': '0px 25px 60px 0px rgba(142, 142, 142, 0.12);',

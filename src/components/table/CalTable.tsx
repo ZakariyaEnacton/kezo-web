@@ -123,6 +123,15 @@ const CalTable: React.FC = () => {
     },
   ];
 
+  const determineRowColor = (id: number) => {
+    if (id === 2 || id === 9 || id === 12) {
+      return "bg-tert";
+    } else if (id === 11) {
+      return "bg-gray-100";
+    }
+    return "bg-white";
+  };
+
   return (
     <div className="flex flex-col items-start rounded-lg border border-select">
       <table>
@@ -149,13 +158,9 @@ const CalTable: React.FC = () => {
           {TableData.map((data) => (
             <tr
               key={data.id}
-              className={`${
-                data.id === 2 || data.id === 9 || data.id === 12
-                  ? "bg-tert"
-                  : data.id === 11
-                  ? "bg-gray-100"
-                  : "bg-white"
-              } flex items-start bg-white border-b border-third`}
+              className={`${determineRowColor(
+                data.id
+              )} flex items-start border-b border-third`}
             >
               <td className="flex w-[74px] h-[60px] px-6 py-4 items-center justify-center">
                 <span className="text-sm font-normal text-black">
