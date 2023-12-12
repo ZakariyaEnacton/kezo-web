@@ -1,7 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
-import { EnvelopeIcon } from "@heroicons/react/24/outline";
+import { EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import t from "../translate";
-import LocationList from "../LocationList";
 
 const EditCityDetails = ({ isOpen, closeModal }: any) => {
   return (
@@ -53,7 +52,14 @@ const EditCityDetails = ({ isOpen, closeModal }: any) => {
                       <span className="text-sm text-center font-normal text-cals">
                         City Name
                       </span>
-                      <LocationList />
+                      <div className="flex flex-row items-center gap-2 rounded-md bg-white shadow-menu w-[396px] p-2  ">
+                        <MapPinIcon className="h-6 w-6 text-green" />
+                        <input
+                          type="email"
+                          placeholder="Enter Your City"
+                          className="text-sm text-secondary font-normal outline-none w-full"
+                        />
+                      </div>
                       <span className="text-xs text-center font-[300] text-secondary">
                         Please don’t use abbreviations. Eg: R-J
                       </span>
