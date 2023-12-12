@@ -29,12 +29,14 @@ const AddEmailModal = ({ isOpen, closeModal }: any) => {
             >
               <Dialog.Panel className="w-[460px] transform overflow-hidden rounded-3xl bg-white pt-[2px] pb-8 shadow-xl transition-all">
                 <div className="flex w-full flex-col items-center gap-1">
-                  <div className="flex w-[396px] py-4 flex-col items-center gap-2">
-                    <img
-                      src="/Image/add_email_icon.png"
-                      alt={"Sky_Logo"}
-                      className="w-28 h-28"
-                    />
+                  <div className="flex w-[396px] py-2 flex-col items-center gap-2">
+                    <div className="">
+                      <img
+                        src="/Image/add_email_icon.png"
+                        alt={"Sky_Logo"}
+                        className="w-44 h-44"
+                      />
+                    </div>
                     <div className="flex w-[396px] flex-col items-center gap-3">
                       <span className="text-2xl text-center tracking-tighter font-normal text-black">
                         Add Email To [{t("city_name")}]

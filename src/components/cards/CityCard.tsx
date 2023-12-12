@@ -85,6 +85,7 @@ const CityCard = ({ data }: any) => {
           <button
             type="button"
             className="flex shadow-share bg-white items-center gap-2 justify-center py-[6px] px-2 rounded "
+            onClick={openDeleteModal}
           >
             <TrashIcon className="h-5 w-5 text-exit" />
             <span className="text-sm font-normal text-center text-exit">
@@ -94,7 +95,7 @@ const CityCard = ({ data }: any) => {
         </div>
       </div>
       <AddEmailModal isOpen={openAddEmail} closeModal={closeAddEmailModal} />
-      <DeleteModal />
+      <DeleteModal isOpen={openDelete} closeModal={closeDeleteModal} />
     </div>
   );
 };

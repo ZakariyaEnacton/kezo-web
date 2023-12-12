@@ -27,47 +27,28 @@ const DeleteModal = ({ isOpen, closeModal }: any) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="w-[460px] transform overflow-hidden rounded-3xl bg-white pt-[2px] pb-8 shadow-xl transition-all">
+              <Dialog.Panel className="w-[460px] transform overflow-hidden rounded-3xl bg-white pt-[-10px] pb-8 shadow-xl transition-all">
                 <div className="flex w-full flex-col items-center gap-1">
                   <div className="flex w-[396px] py-4 flex-col items-center gap-2">
                     <img
-                      src="/Image/add_email_icon.png"
-                      alt={"Sky_Logo"}
-                      className="w-28 h-28"
+                      src="/Image/delete_head_icon.png"
+                      alt={"Delete_head_icon"}
+                      className="w-44  h-44"
                     />
                     <div className="flex w-[396px] flex-col items-center gap-3">
                       <span className="text-2xl text-center tracking-tighter font-normal text-black">
-                        Add Email To [{t("city_name")}]
+                        Are You Sure to Delete [{t("city_name")}]
                       </span>
                       <span className="text-sm text-center font-[300] text-secondary">
-                        Strengthen communication for a more informed city with
-                        the addition of email services.
+                        Are You Sure to Delete [{t("city_name")}]? Confirming
+                        this step is crucial for maintaining accurate records.
                       </span>
                     </div>
                   </div>
-                  <div className="border-t border-third w-[460px] py-8 px-8">
-                    <div className="flex w-[396px] flex-col items-start gap-2">
-                      <span className="text-sm text-center font-normal text-cals">
-                        Email for Admin
-                      </span>
-
-                      <div className="flex flex-row items-center gap-2 rounded-md bg-white shadow-menu w-[396px] p-2">
-                        <EnvelopeIcon className="h-6 w-6 text-neutral" />
-                        <input
-                          type="email"
-                          placeholder="Enter email"
-                          className="text-sm text-secondary font-normal outline-none w-full"
-                        />
-                      </div>
-                      <span className="text-xs text-center font-[300] text-secondary">
-                        Enter admin to assign this city
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex w-[396px] items-center justify-between">
+                  <div className="flex w-[396px] items-center gap-5 mt-3">
                     <button
                       type="button"
-                      className="flex py-2 px-4 justify-center items-center gap-[6px] rounded-md bg-white shadow-share"
+                      className="flex py-2 px-4 justify-center items-center w-[186px] gap-[6px] rounded-md bg-white shadow-share"
                       onClick={closeModal}
                     >
                       <span className="text-sm text-black font-normal">
@@ -76,10 +57,10 @@ const DeleteModal = ({ isOpen, closeModal }: any) => {
                     </button>
                     <button
                       type="button"
-                      className="flex py-2 px-4 justify-center items-center gap-[6px] rounded-md bg-green shadow-share"
+                      className="flex py-2 px-4 justify-center w-[186px] items-center gap-[6px] rounded-md bg-exit shadow-share"
                     >
                       <span className="text-sm text-white font-normal">
-                        Add Email
+                        Delete City
                       </span>
                     </button>
                   </div>
