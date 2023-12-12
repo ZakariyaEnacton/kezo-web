@@ -29,12 +29,17 @@ const EditCityDetails = ({ isOpen, closeModal }: any) => {
             >
               <Dialog.Panel className="w-[460px] transform overflow-hidden rounded-3xl bg-white pt-[2px] pb-8 shadow-xl transition-all">
                 <div className="flex w-full flex-col items-center gap-5">
-                  <div className="flex w-[396px] py-2 flex-col items-center gap-2">
-                    <div className="">
+                  <div className="flex w-[396px] py-2 flex-col items-center gap-3">
+                    <div>
                       <img
-                        src="/Image/add_email_icon.png"
+                        src="/Image/city_loc.png"
                         alt={"Sky_Logo"}
                         className="w-44 h-44 mb-[-16px]"
+                      />
+                      <img
+                        src="/Image/green_edit.png"
+                        alt={"Sky_Logo"}
+                        className="w-16 h-16 absolute top-[100px] left-[160px]"
                       />
                     </div>
                     <div className="flex w-[396px] flex-col items-center gap-3">
@@ -52,7 +57,7 @@ const EditCityDetails = ({ isOpen, closeModal }: any) => {
                       <span className="text-sm text-center font-normal text-cals">
                         City Name
                       </span>
-                      <div className="flex flex-row items-center gap-2 rounded-md bg-white shadow-menu w-[396px] p-2  ">
+                      <div className="flex flex-row items-center gap-2 rounded-md bg-white shadow-menu w-[396px] p-2">
                         <MapPinIcon className="h-6 w-6 text-green" />
                         <input
                           type="email"
