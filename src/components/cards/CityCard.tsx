@@ -8,10 +8,12 @@ import t from "../translate";
 import { useState } from "react";
 import AddEmailModal from "../modal/AddEmailModal";
 import DeleteModal from "../modal/DeleteModal";
+import EditCityDetails from "../modal/EditCityDetails";
 
 const CityCard = ({ data }: any) => {
   const [openAddEmail, setOpenAddEmail] = useState(false);
   const [openDelete, setDelete] = useState(false);
+  const [editCity, setEditCity] = useState(false);
 
   const openAddEmailModal = () => {
     setOpenAddEmail(true);
@@ -27,6 +29,14 @@ const CityCard = ({ data }: any) => {
 
   const closeDeleteModal = () => {
     setDelete(false);
+  };
+
+  const openEditCityModal = () => {
+    setEditCity(true);
+  };
+
+  const closeEditCityModal = () => {
+    setEditCity(false);
   };
 
   return (
@@ -76,6 +86,7 @@ const CityCard = ({ data }: any) => {
           <button
             type="button"
             className="flex shadow-share bg-white items-center gap-2 justify-center py-[6px] px-2 rounded "
+            onClick={openEditCityModal}
           >
             <PencilIcon className="h-5 w-5" />
             <span className="text-sm font-normal text-center">
@@ -96,6 +107,7 @@ const CityCard = ({ data }: any) => {
       </div>
       <AddEmailModal isOpen={openAddEmail} closeModal={closeAddEmailModal} />
       <DeleteModal isOpen={openDelete} closeModal={closeDeleteModal} />
+      <EditCityDetails isOpen={editCity} closeModal={closeEditCityModal} />
     </div>
   );
 };

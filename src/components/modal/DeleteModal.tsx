@@ -33,7 +33,7 @@ const DeleteModal = ({ isOpen, closeModal }: any) => {
                     <img
                       src="/Image/delete_head_icon.png"
                       alt={"Delete_head_icon"}
-                      className="w-44  h-44"
+                      className="w-44  h-44 mb-[-18px]"
                     />
                     <div className="flex w-[396px] flex-col items-center gap-3">
                       <span className="text-2xl text-center tracking-tighter font-normal text-black">
@@ -60,7 +60,7 @@ const DeleteModal = ({ isOpen, closeModal }: any) => {
                       className="flex py-2 px-4 justify-center w-[186px] items-center gap-[6px] rounded-md bg-exit shadow-share"
                     >
                       <span className="text-sm text-white font-normal">
-                        Delete Citys
+                        Delete City
                       </span>
                     </button>
                   </div>

@@ -1,8 +1,9 @@
 import { Dialog, Transition } from "@headlessui/react";
-import t from "../translate";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
+import t from "../translate";
+import LocationList from "../LocationList";
 
-const AddEmailModal = ({ isOpen, closeModal }: any) => {
+const EditCityDetails = ({ isOpen, closeModal }: any) => {
   return (
     <Transition appear show={isOpen}>
       <Dialog className="relative z-10" onClose={closeModal}>
@@ -28,13 +29,13 @@ const AddEmailModal = ({ isOpen, closeModal }: any) => {
               leaveTo="opacity-0 scale-95"
             >
               <Dialog.Panel className="w-[460px] transform overflow-hidden rounded-3xl bg-white pt-[2px] pb-8 shadow-xl transition-all">
-                <div className="flex w-full flex-col items-center gap-7">
+                <div className="flex w-full flex-col items-center gap-5">
                   <div className="flex w-[396px] py-2 flex-col items-center gap-2">
                     <div className="">
                       <img
                         src="/Image/add_email_icon.png"
                         alt={"Sky_Logo"}
-                        className="w-44 h-44 mb-[-20px]"
+                        className="w-44 h-44 mb-[-16px]"
                       />
                     </div>
                     <div className="flex w-[396px] flex-col items-center gap-3">
@@ -42,19 +43,28 @@ const AddEmailModal = ({ isOpen, closeModal }: any) => {
                         Add Email To [{t("city_name")}]
                       </span>
                       <span className="text-sm text-center font-[300] text-secondary">
-                        Strengthen communication for a more informed city with
-                        the addition of email services.
+                        Seamlessly edit and enhance city details for a more
+                        accurate and efficient waste management system.
                       </span>
                     </div>
                   </div>
-                  <div className="border-t border-third w-[460px] py-8 px-8">
+                  <div className="border-t border-third w-[460px] py-8 px-8 flex flex-col gap-4">
+                    <div className="flex w-[396px] flex-col items-start gap-1">
+                      <span className="text-sm text-center font-normal text-cals">
+                        City Name
+                      </span>
+                      <LocationList />
+                      <span className="text-xs text-center font-[300] text-secondary">
+                        Please don’t use abbreviations. Eg: R-J
+                      </span>
+                    </div>
                     <div className="flex w-[396px] flex-col items-start gap-2">
                       <span className="text-sm text-center font-normal text-cals">
                         Email for Admin
                       </span>
 
-                      <div className="flex flex-row items-center gap-2 rounded-md bg-white shadow-menu w-[396px] p-2">
-                        <EnvelopeIcon className="h-6 w-6 text-neutral" />
+                      <div className="flex flex-row items-center gap-2 rounded-md bg-white shadow-menu w-[396px] p-2  ">
+                        <EnvelopeIcon className="h-6 w-6 text-neutral hover:text-green" />
                         <input
                           type="email"
                           placeholder="Enter email"
@@ -81,7 +91,7 @@ const AddEmailModal = ({ isOpen, closeModal }: any) => {
                       className="flex py-2 px-4 justify-center items-center gap-[6px] rounded-md bg-green shadow-share"
                     >
                       <span className="text-sm text-white font-normal">
-                        Add Email
+                        Save Changes
                       </span>
                     </button>
                   </div>
@@ -95,4 +105,4 @@ const AddEmailModal = ({ isOpen, closeModal }: any) => {
   );
 };
 
-export default AddEmailModal;
+export default EditCityDetails;
