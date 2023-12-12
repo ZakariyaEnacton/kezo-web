@@ -60,7 +60,7 @@ const DeleteModal = ({ isOpen, closeModal }: any) => {
                       className="flex py-2 px-4 justify-center w-[186px] items-center gap-[6px] rounded-md bg-exit shadow-share"
                     >
                       <span className="text-sm text-white font-normal">
-                        Delete City
+                        Delete Citys
                       </span>
                     </button>
                   </div>
