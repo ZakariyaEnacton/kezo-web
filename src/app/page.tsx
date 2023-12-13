@@ -1,5 +1,5 @@
 import Contents from "@/components/Content";
-import StatusSection from "@/components/section/StatusSection";
+import StatusSection from "@/components/sections/StatusSection";
 
 export default function Home() {
   return (

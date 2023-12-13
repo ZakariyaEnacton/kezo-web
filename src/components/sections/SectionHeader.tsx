@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { PlusIcon } from "@heroicons/react/20/solid";
 import t from "@/components/translate";
-import AddCityModal from "../modal/AddCityModal";
+import AddCityModal from "../modals/AddCityModal";
 
 const SectionHeader = () => {
   const [sectionTitle, setSectionTitle] = useState("");

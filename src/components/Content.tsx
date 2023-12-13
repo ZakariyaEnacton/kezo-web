@@ -1,9 +1,9 @@
 "use client";
 import { usePathname } from "next/navigation";
-import SectionHeader from "./section/SectionHeader";
-import StatusSection from "./section/StatusSection";
-import CalendarSection from "./section/CalendarSection";
-import CitiesSection from "./section/CitiesSection";
+import SectionHeader from "./sections/SectionHeader";
+import StatusSection from "./sections/StatusSection";
+import CalendarSection from "./sections/CalendarSection";
+import CitiesSection from "./sections/CitiesSection";
 
 const Contents = () => {
   const pathname = usePathname();

@@ -6,9 +6,9 @@ import {
 } from "@heroicons/react/24/outline";
 import t from "../translate";
 import { useState } from "react";
-import AddEmailModal from "../modal/AddEmailModal";
-import DeleteModal from "../modal/DeleteModal";
-import EditCityDetails from "../modal/EditCityDetails";
+import AddEmailModal from "../modals/AddEmailModal";
+import DeleteModal from "../modals/DeleteModal";
+import EditCityDetails from "../modals/EditCityDetails";
 
 const CityCard = ({ data }: any) => {
   const [openAddEmail, setOpenAddEmail] = useState(false);
