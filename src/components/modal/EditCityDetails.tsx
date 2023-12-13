@@ -52,59 +52,61 @@ const EditCityDetails = ({ isOpen, closeModal }: any) => {
                       </span>
                     </div>
                   </div>
-                  <div className="border-t border-third w-[460px] py-8 px-8 flex flex-col gap-4">
-                    <div className="flex w-[396px] flex-col items-start gap-1">
-                      <span className="text-sm text-center font-normal text-cals">
-                        City Name
-                      </span>
-                      <div className="flex flex-row items-center gap-2 rounded-md bg-white shadow-menu w-[396px] p-2">
-                        <MapPinIcon className="h-6 w-6 text-green" />
-                        <input
-                          type="email"
-                          placeholder="Enter Your City"
-                          className="text-sm text-secondary font-normal outline-none w-full"
-                        />
+                  <div>
+                    <div className="border-t border-third w-[460px] py-8 px-8 flex flex-col gap-4">
+                      <div className="flex w-[396px] flex-col items-start gap-1">
+                        <span className="text-sm text-center font-normal text-cals">
+                          City Name
+                        </span>
+                        <div className="flex flex-row items-center gap-2 rounded-md bg-white shadow-menu w-[396px] p-2">
+                          <MapPinIcon className="h-6 w-6 text-green" />
+                          <input
+                            type="email"
+                            placeholder="Enter Your City"
+                            className="text-sm text-secondary font-normal outline-none w-full"
+                          />
+                        </div>
+                        <span className="text-xs text-center font-[300] text-secondary">
+                          Please don’t use abbreviations. Eg: R-J
+                        </span>
                       </div>
-                      <span className="text-xs text-center font-[300] text-secondary">
-                        Please don’t use abbreviations. Eg: R-J
-                      </span>
-                    </div>
-                    <div className="flex w-[396px] flex-col items-start gap-2">
-                      <span className="text-sm text-center font-normal text-cals">
-                        Email for Admin
-                      </span>
+                      <div className="flex w-[396px] flex-col items-start gap-2">
+                        <span className="text-sm text-center font-normal text-cals">
+                          Email for Admin
+                        </span>
 
-                      <div className="flex flex-row items-center gap-2 rounded-md bg-white shadow-menu w-[396px] p-2  ">
-                        <EnvelopeIcon className="h-6 w-6 text-neutral hover:text-green" />
-                        <input
-                          type="email"
-                          placeholder="Enter email"
-                          className="text-sm text-secondary font-normal outline-none w-full"
-                        />
+                        <div className="flex flex-row items-center gap-2 rounded-md bg-white shadow-menu w-[396px] p-2  ">
+                          <EnvelopeIcon className="h-6 w-6 text-neutral hover:text-green" />
+                          <input
+                            type="email"
+                            placeholder="Enter email"
+                            className="text-sm text-secondary font-normal outline-none w-full"
+                          />
+                        </div>
+                        <span className="text-xs text-center font-[300] text-secondary">
+                          Enter admin to assign this city
+                        </span>
                       </div>
-                      <span className="text-xs text-center font-[300] text-secondary">
-                        Enter admin to assign this city
-                      </span>
                     </div>
-                  </div>
-                  <div className="flex w-[396px] items-center justify-between">
-                    <button
-                      type="button"
-                      className="flex py-2 px-4 justify-center items-center gap-[6px] rounded-md bg-white shadow-share"
-                      onClick={closeModal}
-                    >
-                      <span className="text-sm text-black font-normal">
-                        Cancel
-                      </span>
-                    </button>
-                    <button
-                      type="button"
-                      className="flex py-2 px-4 justify-center items-center gap-[6px] rounded-md bg-green shadow-share"
-                    >
-                      <span className="text-sm text-white font-normal">
-                        Save Changes
-                      </span>
-                    </button>
+                    <div className="flex container max-w-[396px] items-center justify-between">
+                      <button
+                        type="button"
+                        className="flex py-2 px-4 justify-center items-center gap-[6px] rounded-md bg-white shadow-share"
+                        onClick={closeModal}
+                      >
+                        <span className="text-sm text-black font-normal">
+                          Cancel
+                        </span>
+                      </button>
+                      <button
+                        type="button"
+                        className="flex py-2 px-4 justify-center items-center gap-[6px] rounded-md bg-green shadow-share"
+                      >
+                        <span className="text-sm text-white font-normal">
+                          Save Changes
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </Dialog.Panel>

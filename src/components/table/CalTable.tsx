@@ -174,18 +174,24 @@ const CalTable: React.FC = () => {
               </td>
               <td className="flex w-[120px] h-[60px] px-6 py-4 items-center justify-center">
                 {data.id === 10 ? (
-                  <div className="w-9 h-9 bg-icon_bg_2 rounded-full">
+                  <button
+                    type="button"
+                    className="w-9 h-9 bg-icon_bg_2 rounded-full"
+                  >
                     <DocumentIcon className="h-6 w-6 font-bold mx-[6px] my-[6px] text-paper" />
-                  </div>
+                  </button>
                 ) : (
                   data.sec
                 )}
               </td>
               <td className="flex w-[120px] h-[60px] px-6 py-4 items-center justify-center">
                 {data.id === 10 ? (
-                  <div className="w-9 h-9 bg-icon_bg_2 rounded-full">
+                  <button
+                    type="button"
+                    className="w-9 h-9 bg-icon_bg_2 rounded-full"
+                  >
                     <DocumentIcon className="h-6 w-6 font-bold mx-[6px] my-[6px] text-paper" />
-                  </div>
+                  </button>
                 ) : (
                   data.one
                 )}
@@ -197,9 +203,12 @@ const CalTable: React.FC = () => {
               </td>
               <td className="flex w-[120px] h-[60px] px-6 py-4 items-center justify-center">
                 {data.id === 1 ? (
-                  <div className="w-9 h-9 bg-icon_bg_3 rounded-full">
+                  <button
+                    type="button"
+                    className="w-9 h-9 bg-icon_bg_3 rounded-full"
+                  >
                     <TrashIcon className="h-6 w-6 font-bold mx-[6px] my-[6px] text-waste" />
-                  </div>
+                  </button>
                 ) : (
                   data.four
                 )}

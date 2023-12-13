@@ -54,10 +54,10 @@ const CalHead = () => {
                     </Combobox.Button>{" "}
                   </>
                 ) : (
-                  <div className="flex px-1 py-[2px] items-center self-stretch gap-2 rounded bg-white shadow-search">
+                  <div className="flex px-1 py-[2px] items-center justify-between self-stretch gap-2 rounded bg-white w-full shadow-search">
                     <MagnifyingGlassIcon className="h-5 w-5 text-green" />
                     <Combobox.Input
-                      className="flex text-sm font-normal text-cals outline-none"
+                      className="flex text-sm  font-normal text-cals outline-none"
                       onChange={(event) => setQuery(event.target.value)}
                     />
                     <XMarkIcon
@@ -117,7 +117,7 @@ const CalHead = () => {
                   )}
 
                   <div className="border-t flex py-[11px] px-[14px] items-end gap-[10px] self-stretch">
-                    <button className="flex py-[6px] px-[8px] justify-center items-center gap-[6px] rounded bg-white shadow-share w-[230px] ">
+                    <button className="flex py-[6px] px-[8px] justify-center items-center gap-[6px] rounded bg-white shadow-share w-full">
                       <span>Save</span>
                     </button>
                   </div>
@@ -129,17 +129,17 @@ const CalHead = () => {
       </div>
       <div className="flex items-start gap-9">
         <div className="flex items-center gap-2">
-          <div className="w-6 h-6 bg-icon_bg_2 rounded-full">
+          <button type="button" className="w-6 h-6 bg-icon_bg_2 rounded-full">
             <DocumentIcon className="h-4 w-4 font-bold mx-1 my-1 text-paper" />
-          </div>
+          </button>
           <span className="text-xs font-normal tracking-tight text-paper uppercase">
             {t("paper")}
           </span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-6 h-6 bg-icon_bg_3 rounded-full">
+          <button type="button" className="w-6 h-6 bg-icon_bg_3 rounded-full">
             <TrashIcon className="h-4 w-4 font-bold mx-1 my-1 text-waste" />
-          </div>
+          </button>
           <span className="text-xs font-normal tracking-tight text-waste uppercase">
             {t("waste")}
           </span>
